@@ -1,4 +1,6 @@
 # GameOfLife
+
+## Introduction
 A fast, C++ OpenGL implementation of Conway's Game of Life. Now includes a 3D version!
 
 ![](http://i.imgur.com/wuedsKw.png)
@@ -34,4 +36,17 @@ Keyboard Commands:
   [r] : toggle rotation
   
   [s] : toggle shading style
-  
+
+
+## To Use Docker for CUDA version
+First we need to build the docker image first.
+```
+cd docker
+./build_docker.sh
+```
+Note that we only need to do it one time.
+Secondly, we can use the script to launch the docker. The docker will mount the directory automatically, so we can modify the file outside and run inside the docker. 
+To run it, go back to the project root directory, and run the following command.
+```
+./docker/run.sh
+```
